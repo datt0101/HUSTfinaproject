@@ -15,3 +15,7 @@ MonoBehaviour:
   playerID: 20192754
   playerLevel: 1
   playerName: Guest
+  playerStrength: 0
+  playerIntelligence: 0
+  playerSocial: 0
+  playerKnowledge: 0

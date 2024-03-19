@@ -12,6 +12,12 @@ public class QuestUpdateUI : MonoBehaviour
 
     public void UpdateQuestInfo(QuestProfile questProfile)
     {
+        if (questTitleText == null)
+        {
+            questTitleText.text = null;
+            questDescriptionText.text = null;
+        }
+
         questTitleText.text = questProfile.QuestTitle;
         questDescriptionText.text = questProfile.QuestDescription;
     }

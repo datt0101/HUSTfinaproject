@@ -39,7 +39,6 @@ public class PlayerManager : MonoBehaviour
         this.playerRigidbody = GetComponent<Rigidbody>();
         this.playerController = GetComponent<CharacterController>();
         this.playerMeshFilter = this.playerModel.GetComponent<MeshFilter>();
-
         Debug.Log(transform.name + ": LoadChar", gameObject);
 
     }

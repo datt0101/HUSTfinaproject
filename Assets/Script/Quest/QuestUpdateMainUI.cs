@@ -12,6 +12,14 @@ public class QuestUpdateMainUI : MonoBehaviour
 
     public void UpdateQuestInfo(QuestProfile questProfile)
     {
+        if (questTitleText == null)
+        {
+            questTitleText.text = null;
+            questDescriptionText.text = null;
+            questSummaryText.text = null;
+            questPointText.text = null;
+
+        }
         questTitleText.text = questProfile.QuestTitle;
         questDescriptionText.text = questProfile.QuestDescription;
         questSummaryText.text = "Cách thực hiện nhiệm vụ: "+questProfile.QuestSummary;
